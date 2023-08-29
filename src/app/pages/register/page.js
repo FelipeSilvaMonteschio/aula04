@@ -3,7 +3,7 @@
 export default function register() {
     return(
         <div>
-            <h1>Register</h1>
+            <h1>Registro</h1>
         </div>
     )
 }
