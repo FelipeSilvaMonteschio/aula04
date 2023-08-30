@@ -22,7 +22,7 @@ export const middleware = (request) => {
     NextResponse.next();
 };
 export const config = {
-    matcher: ['/', '/pages/dashboard']
+    matcher: ['/', '/pages/dashboard','/pages/register','/pages/alterar']
 };
 
 
