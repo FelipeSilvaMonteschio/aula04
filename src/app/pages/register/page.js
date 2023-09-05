@@ -1,13 +1,21 @@
+import { toast } from 'react-toastify'
 import styles from '../../css/style.module.css'
+import { ToastContainer , toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 export default function register() {
+
+    function registrar () {
+        toast.error('email registrado com sucesso')
+    }
+
     return(
-        <form className={styles.register} >
+        <form className={styles.register} onSubmit={registrar}>
             <h1>Registro</h1>
 
             <div id="blocos">
             <label id={styles.label}>Nome</label>
-            <input type="name" id="btnInput" placeholder="Insira seu Nome"/>
+            <input type="text" id="btnInput" placeholder="Insira seu Nome"/>
             </div>
 
             <div id="blocos">
