@@ -1,15 +1,20 @@
-import { toast } from 'react-toastify'
+'use client'
+import { ToastContainer, toast } from 'react-toastify'
 import styles from '../../css/style.module.css'
-import { ToastContainer , toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+
 
 export default function register() {
 
-    function registrar () {
-        toast.error('email registrado com sucesso')
+
+    function registrar (e) {
+        e.preventDefault();
+
+        toast.success('formulario registrado com secesso');
     }
 
     return(
+        <div>
         <form className={styles.register} onSubmit={registrar}>
             <h1>Registro</h1>
 
@@ -31,5 +36,7 @@ export default function register() {
             <button id={styles.btn} >Cadastrar</button>
 
         </form>
+        <ToastContainer />
+        </div>
     )
 }
