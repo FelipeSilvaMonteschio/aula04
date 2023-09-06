@@ -2,7 +2,7 @@ import { resolve } from "styled-jsx/css"
 
 
 export default async function ListaUsers({users}){
-    await new Promise((resolve) => setTimeout(resolve, 5000))
+    await new Promise((resolve) => setTimeout(resolve, 500))
         return(
             <div>    
 

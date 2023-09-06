@@ -21,3 +21,38 @@
     font-size: 1.2rem;
     color: black;
 }
+
+.navbar {
+    background-color: lightgray;
+    width: 180px;
+    height: 100svh;
+    text-align: left;
+    align-items: left;
+}
+
+.divflex {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#button {
+    margin: 20px;
+    width: 110px;
+    border: none;
+    border-radius: 6px;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#button:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.child {
+    margin-left: 32%;
+}

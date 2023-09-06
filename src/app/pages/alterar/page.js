@@ -2,8 +2,6 @@
 import styles from '../../css/style.module.css'
 import 'react-toastify/dist/ReactToastify.css'
 import { ToastContainer, toast } from 'react-toastify'
-import Cookies from "js-cookie";
-import { useRouter } from "next/navigation";
 
 export default function alterar() {
     function alterer (e) {
@@ -12,14 +10,6 @@ export default function alterar() {
         toast.success('formulario registrado com secesso');
     }
 
-    function sair (e) {
-        e.preventDefault();
-        refresh()
-        Cookies.remove('token')
-        localStorage.clear('nome')
-    }
-
-    const { push, refresh } = useRouter();
 
     return(
         <div>
@@ -44,9 +34,6 @@ export default function alterar() {
             <button id={styles.btn}> Alterar</button>
 
         </form>
-        <form onSubmit={sair}>
-                <button>Sair</button>
-            </form>
         <ToastContainer />
         </div>
     )
