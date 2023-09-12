@@ -3,8 +3,8 @@ import { useState } from "react";
 import handlerAcessUser from "./functions/handlerAcess"
 import { useRouter } from "next/navigation";
 import { ToastContainer , toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
 import styles from './css/style.module.css'
+import 'react-toastify/dist/ReactToastify.css'
 
 export default function Login() {
   const [user, setUser] = useState({
@@ -27,7 +27,7 @@ export default function Login() {
     }
   }
   return (
-    <div>
+    <div >
 
       <form className={styles.register} onSubmit={handlerLogin}>
       <h1>Login</h1>

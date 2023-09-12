@@ -1,20 +1,19 @@
 'use client'
 import { ToastContainer, toast } from 'react-toastify'
 import styles from '../../css/style.module.css'
+import Navbar from '@/app/componentes/navbar'
 import 'react-toastify/dist/ReactToastify.css'
 
 
 export default function register() {
-
-
     function registrar (e) {
         e.preventDefault();
-
         toast.success('formulario registrado com secesso');
     }
 
     return(
-        <div>
+        <div className={styles.divflex}>
+            <Navbar />
         <form className={styles.register} onSubmit={registrar}>
             <h1>Registro</h1>
 

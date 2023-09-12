@@ -2,6 +2,7 @@
 import styles from '../../css/style.module.css'
 import 'react-toastify/dist/ReactToastify.css'
 import { ToastContainer, toast } from 'react-toastify'
+import Navbar from '@/app/componentes/navbar'
 
 export default function alterar() {
     function alterer (e) {
@@ -13,6 +14,7 @@ export default function alterar() {
 
     return(
         <div>
+            <Navbar />
         <form className={styles.register} onSubmit={alterer} >
             <h1>Alterar</h1>
 

@@ -19,6 +19,16 @@ export const middleware = (request) => {
             return NextResponse.redirect(urlDash);
         }
     }
+    if (!isTokenValidated || !token) {
+        function Mudarestado() {
+          var display = document.getElementById('minhadiv').style.display;
+          document.getElementById('minhadiv').style.display = 'none';
+         /* if(display == "none")
+              document.getElementById('minhadiv').style.display = 'block';
+          else
+              document.getElementById('minhadiv').style.display = 'none';
+      */}
+  }
     NextResponse.next();
 };
 export const config = {
