@@ -27,14 +27,14 @@ export default function Login() {
     }
   }
   return (
-    <div >
+    <div className={styles.divflex}>
 
       <form className={styles.register} onSubmit={handlerLogin}>
       <h1>Login</h1>
 
 
         <label id={styles.label}>Email</label>
-        <input
+        <input required className={styles.input}
           placeholder='E-mail'
           type="email"
           onChange={(e) => { setUser({ ...user, email: e.target.value }) }}>
@@ -43,14 +43,14 @@ export default function Login() {
 
 
         <label id={styles.label}>Senha</label>
-        <input
+        <input required className={styles.input}
           placeholder='Senha'
           type='password'
           onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>
         </input><br/>
 
 
-        <button id={styles.button}>Entrar</button>
+        <button id={styles.btn}>Entrar</button>
 
         
       </form>

@@ -1,14 +1,13 @@
 .register {
     background-color: lightgray;
-    width: 15%;
-    height: 30vh;
+    width: 350px;
+    height: 40vh, auto;
     padding-top: 2%;
     border-radius: 8px;
     margin-top: 2%;
     text-align: center;
     margin-left: 38%;
 }
-
 #btn {
     background-color: gray;
     color: #ffffff;
@@ -19,6 +18,11 @@
     cursor: pointer;
     margin-top: 12px;
     text-transform: uppercase;
+    margin-bottom: 10%;
+}
+#btn:hover{
+    background-color: rgb(63, 63, 63);
+    color: #fff;
 }
 
 #label {
@@ -44,11 +48,11 @@
 
 #button {
     margin: 20px;
-    width: 110px;
+    width: 110px, auto;
     height: 50%;
     border: none;
     border-radius: 6px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -67,17 +71,20 @@
 }
 
 .card {
-    width: 300px;
-    height: 100px;
+    width: 10%;
+    height: 14vh;
     border-radius: 8px;
     background-color: lightblue;
-    padding-left: 3%;
+    padding-left: 1%;
+    margin: 1%;
+}
+.cardconteiner{
+    display: flex;
 }
 
 .usuario {
-    width: 110px;
+    width: 20%;
     border-radius: 8px;
-    margin-left: 10%;
     padding: 0px 5px;
     color: black;
     font-weight: bold;
@@ -102,4 +109,26 @@
     text-transform: uppercase;
     font-weight: bold;
     padding-left: 12px;
+}
+
+#name {
+    font-family: tahoma;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+#password {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.input {
+    width: 85%;
+    height: 1.8vh;
+    padding: 2% 2% 2% 6%;
+    border: none;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    border-radius: 6px;
 }

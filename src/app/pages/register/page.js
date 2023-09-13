@@ -19,17 +19,17 @@ export default function register() {
 
             <div id="blocos">
             <label id={styles.label}>Nome</label>
-            <input type="text" id="btnInput" placeholder="Insira seu Nome"/>
+            <input className={styles.input} type="text" id="btnInput" placeholder="Insira seu Nome" required/>
             </div>
 
             <div id="blocos">
                 <label id={styles.label}>Email</label>
-                <input type="email" id="btnInput" placeholder="Insira seu Email" />
+                <input className={styles.input} type="email" id="btnInput" placeholder="Insira seu Email" required/>
             </div>
 
             <div id="blocos">
                 <label id={styles.label}>Senha</label>
-                <input type="password" id="btnInput" placeholder="Insira sua Senha" />
+                <input className={styles.input} type="password" id="btnInput" placeholder="Insira sua Senha" required/>
             </div>
 
             <button id={styles.btn} >Cadastrar</button>
