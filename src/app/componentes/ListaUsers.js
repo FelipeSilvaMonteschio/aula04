@@ -1,4 +1,3 @@
-import { resolve } from "styled-jsx/css"
 import styles from '../css/style.module.css'
 
 
