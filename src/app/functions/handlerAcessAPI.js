@@ -1,41 +1,19 @@
 'use server'
-const responseIsuserAuth = [
-    {   name : "Felipe",
-        email : "felipe@teste",
-        password : "1234",
-        token : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
-    },
-    {   
-        name : "Natasha",
-        email : "natasha@teste",
-        password : "1234",
-        token : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
-    },
-    {   name : "karol",
-        email : "karol@teste",
-        password : "1234",
-        token : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
-    },
-    {   name : "Marcelino",
-        email : "marcelino@teste",
-        password : "1234",
-        token : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
-    },
-]
+const url = 'https://aula-17-10-server.vercel.app'
 
-const getUserAuthenticated = (userLogin) => {
-let Userauth = {}
+const getUserAuthenticated = async (user) => {
+    const resposeOfApi = await fetch(url + "/user/authenticated", 
+    {   method:"POST",
+        headers:{ "Content-Type":"Application/json"},
+        body: JSON.stringify(user)
+    }
+);
+const userAuth = await resposeOfApi.json();
+return userAuth
 
-
-    responseIsuserAuth.map((user) =>{
-        if(user.email === userLogin.email && user.password === userLogin.password){
-            Userauth= user
-        }
-    })
-    return Userauth
 }
 const getUsers = () =>{
-    return responseIsuserAuth
+
 
 }
 export { getUsers, getUserAuthenticated };

@@ -27,7 +27,7 @@ export default function Login() {
     }
   }
   return (
-    <div className={styles.divflex}>
+    <div className={styles.divLogin}>
 
       <form className={styles.register} onSubmit={handlerLogin}>
       <h1>Login</h1>
