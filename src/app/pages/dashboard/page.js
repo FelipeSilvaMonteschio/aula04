@@ -6,7 +6,7 @@ import styles from '../../css/style.module.css'
 import Navbar from '@/app/componentes/navbar'
 
 export default async function Dashboard() {
-   const users = getUsers()
+   const users = await getUsers()
 
 
 
