@@ -77,8 +77,10 @@
 }
 
 .card {
-    width: 10%;
-    height: 14vh;
+    width: 22%;
+    min-width: 500px;
+    height: 20vh;
+    min-height: 200px;
     border-radius: 8px;
     background-color: lightblue;
     padding-left: 1%;
