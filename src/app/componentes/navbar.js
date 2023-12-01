@@ -19,9 +19,7 @@ export default function Navbar () {
           <body className={styles.divflex}>
             <div id="minhadiv" className={styles.navbar}>
 
-            <div className={styles.btndiv} >
-                <img id={styles.image} src='https://img2.gratispng.com/20180802/xaw/kisspng-clip-art-portable-network-graphics-computer-icons-user-staff-person-man-profile-boss-circle-svg-png-5b62ed560cb369.529707841533209942052.jpg' />
-                {localStorage.getItem("Nome")}</div>
+
 
 
               <a  href='/pages/dashboard'><button id={styles.button}>home</button></a>

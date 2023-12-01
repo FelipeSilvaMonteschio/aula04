@@ -8,8 +8,8 @@ import 'react-toastify/dist/ReactToastify.css'
 
 export default function Login() {
   const [user, setUser] = useState({
-    email: '',
-    password: '',
+    usuario: '',
+    senha: '',
   });
   const { push, refresh } = useRouter();
 
@@ -36,8 +36,9 @@ export default function Login() {
         <label id={styles.label}>Email</label>
         <input required className={styles.input}
           placeholder='E-mail'
+          name="usuario"
           type="email"
-          onChange={(e) => { setUser({ ...user, email: e.target.value }) }}>
+          onChange={(e) => { setUser({ ...user, usuario: e.target.value }) }}>
         </input><br/>
 
 
@@ -45,8 +46,9 @@ export default function Login() {
         <label id={styles.label}>Senha</label>
         <input required className={styles.input}
           placeholder='Senha'
+          name="senha"
           type='password'
-          onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>
+          onChange={(e) => { setUser({ ...user, senha: e.target.value }) }}>
         </input><br/>
 
 
